@@ -1,0 +1,8 @@
+applications:
+- name: test-app-cf-pep517
+  memory: 128M
+  disk_quota: 256M
+  path: .
+  buildpack: python_buildpack
+  health-check-type: process
+  stack: cflinuxfs3
